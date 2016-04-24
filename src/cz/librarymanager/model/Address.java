@@ -42,4 +42,14 @@ public class Address {
     public int getZipCode() {
         return zipCode;
     }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "city='" + city + '\'' +
+                ", street='" + street + '\'' +
+                ", number=" + number +
+                ", zipCode=" + zipCode +
+                '}';
+    }
 }

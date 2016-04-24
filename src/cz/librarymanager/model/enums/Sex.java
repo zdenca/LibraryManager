@@ -14,13 +14,13 @@ public enum Sex {
     public int getCode() {
         return code;
     }
+
     public Sex fromCode(int code) {
-        if (code == 0) {
-            return FEMALE;
-        } else if (code == 1) {
-            return MALE;
-        } else {
-            throw new IllegalArgumentException("Invalid code " + code);
+        for (Sex sex : values()) {
+            if (sex.code == code) {
+                return sex;
+            }
         }
+        throw new IllegalArgumentException("Invalid code " + code);
     }
 }
