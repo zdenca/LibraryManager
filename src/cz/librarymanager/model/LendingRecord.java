@@ -12,8 +12,6 @@ public class LendingRecord {
     private User librarian;
 
 
-
-
     public User getLibrarian() {
         return librarian;
     }
@@ -29,7 +27,6 @@ public class LendingRecord {
     public void setUser(User user) {
         this.user = user;
     }
-
 
 
     public Date getBorrowDate() {
@@ -48,5 +45,13 @@ public class LendingRecord {
         this.returningDate = returningDate;
     }
 
-
+    @Override
+    public String toString() {
+        return "LendingRecord{" +
+                "borrowDate=" + borrowDate +
+                ", returningDate=" + returningDate +
+                ", user=" + user +
+                ", librarian=" + librarian +
+                '}';
+    }
 }
