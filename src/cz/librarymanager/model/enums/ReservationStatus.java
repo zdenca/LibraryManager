@@ -15,7 +15,7 @@ public enum ReservationStatus {
         return code;
     }
 
-    public ReservationStatus fromCode(int code) {
+    public static ReservationStatus fromCode(int code) {
         for (ReservationStatus status : values()) {
             if (status.code == code) {
                 return status;

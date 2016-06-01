@@ -15,7 +15,7 @@ public enum Sex {
         return code;
     }
 
-    public Sex fromCode(int code) {
+    public static Sex fromCode(int code) {
         for (Sex sex : values()) {
             if (sex.code == code) {
                 return sex;

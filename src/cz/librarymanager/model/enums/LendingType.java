@@ -15,7 +15,7 @@ public enum LendingType {
         return code;
     }
 
-    public LendingType fromCode(int code) {
+    public static LendingType fromCode(int code) {
         for (LendingType type : values()) {
             if (type.code == code) {
                 return type;
