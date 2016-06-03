@@ -77,7 +77,7 @@ public class LibraryManager {
         SashForm sashForm = new SashForm(shell, SWT.HORIZONTAL);
 
 //      create a Table
-        Table table = new Table(sashForm, SWT.SINGLE | SWT.BORDER | SWT.FULL_SELECTION);
+        Table table = new Table(sashForm, SWT.MULTI | SWT.BORDER | SWT.FULL_SELECTION | SWT.CHECK);
         table.setLinesVisible(true);
         table.setHeaderVisible(true);
 //        GridData dataTab = new GridData(GridData.FILL_HORIZONTAL);
@@ -96,7 +96,7 @@ public class LibraryManager {
             TableItem tableItem = new TableItem(table, SWT.NONE);
             tableItem.setText(0, "Book " + i);
             tableItem.setText(1, "Author " + i);
-            tableItem.setText(2, String.valueOf(i));
+            tableItem.setText(2, "Borrowed");
         }
 
 //       create a Popup Menu
@@ -112,6 +112,7 @@ public class LibraryManager {
 
 
         table.setMenu(popupMenu);
+
 //      create a Composite
         Composite composite = new Composite(sashForm, SWT.BORDER);
         composite.setLayout(new GridLayout(2, false));
