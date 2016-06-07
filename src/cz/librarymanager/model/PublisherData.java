@@ -1,16 +1,24 @@
 package cz.librarymanager.model;
 
 import javax.print.DocFlavor;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
  * Created by Zdenca on 4/18/2016.
  */
 public class PublisherData {
-    private String editionPlace;
     private String publisher;
+    private String editionPlace;
     private int editionNumber;
     private Date issueDate;
+
+    public PublisherData(String publisher, String editionPlace, int editionNumber, Date issueDate) {
+        this.publisher = publisher;
+        this.editionPlace = editionPlace;
+        this.editionNumber = editionNumber;
+        this.issueDate = issueDate;
+    }
 
     public String getEditionPlace() {
         return editionPlace;
@@ -47,10 +55,10 @@ public class PublisherData {
     @Override
     public String toString() {
         return "PublisherData{" +
-                "editionPlace='" + editionPlace + '\'' +
-                ", publisher='" + publisher + '\'' +
-                ", editionNumber=" + editionNumber +
-                ", issueDate=" + issueDate +
+                ", publisher ='" + publisher + '\'' +
+                "  editionPlace ='" + editionPlace + '\'' +
+                ", editionNumber =" + editionNumber +
+                ", issueDate =" + issueDate +
                 '}';
     }
 }

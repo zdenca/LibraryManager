@@ -7,6 +7,10 @@ public class Title {
     private String title;
     private String subTitle;
 
+
+    public Title(String title) {
+        this.title = title;
+    }
     public String getTitle() {
         return title;
     }

@@ -7,8 +7,10 @@ public class Name {
 
 // TODO lastName is mandatory
 
-    public Name(String lastName) {
+    public Name(String lastName, String middleName, String firstName) {
         this.lastName = lastName;
+        this.middleName = middleName;
+        this.firstName = firstName;
     }
 
 

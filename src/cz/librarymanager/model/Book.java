@@ -95,14 +95,16 @@ public class Book {
     @Override
     public String toString() {
         return "Book{" +
-                "registrationNumber='" + registrationNumber + '\'' +
+                "registrationNumber ='" + registrationNumber + '\'' +
                 ", isbn='" + isbn + '\'' +
                 ", title=" + title +
                 ", authors=" + authors +
                 ", status=" + status +
-                ", publisherData=" + publisherData +
+                ", \npublisherData=" + publisherData +
                 ", lendingType=" + lendingType +
                 ", price=" + price +
                 '}';
     }
+
+
 }
