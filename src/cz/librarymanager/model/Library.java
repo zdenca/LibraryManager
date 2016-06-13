@@ -56,10 +56,10 @@ public class Library {
     public String toString() {
         return "Library{" +
                 "reservations=" + reservations +
-                ", lendingRecords=" + lendingRecords +
-                ", books=" + books +
-                ", users=" + users +
-                ", librarians=" + librarians +
+                ",\nlendingRecords=" + lendingRecords +
+                ",\nbooks=" + books +
+                ",\nusers=" + users +
+                ",\nlibrarians=" + librarians +
                 '}';
     }
 }

@@ -6,6 +6,10 @@ package cz.librarymanager.model;
 public class Author {
     private Name name;
 
+    public Author(Name name) {
+        this.name = name;
+    }
+
 
     public Name getName() {
         return name;
@@ -15,4 +19,10 @@ public class Author {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "Author{" +
+                "name=" + name +
+                '}';
+    }
 }

@@ -11,7 +11,15 @@ public class Reservation {
     private Date reservationDate;
     private User user;
     private Book books;
-    private ReservationStatus status;
+    private ReservationStatus reservationStatus;
+
+
+    public Reservation(Date reservationDate, User user, Book books, ReservationStatus reservationStatus) {
+        this.reservationDate = reservationDate;
+        this.user = user;
+        this.books = books;
+        this.reservationStatus = reservationStatus;
+    }
 
     public Date getReservationDate() {
         return reservationDate;
@@ -37,21 +45,20 @@ public class Reservation {
         this.books = books;
     }
 
-    public ReservationStatus getStatus() {
-        return status;
+    public ReservationStatus getReservation() {
+        return reservationStatus;
     }
 
-    public void setStatus(ReservationStatus status) {
-        this.status = status;
+    public void setReservation(ReservationStatus reservationStatus) {
+        this.reservationStatus = reservationStatus;
     }
 
     @Override
     public String toString() {
         return "Reservation{" +
                 "reservationDate=" + reservationDate +
-                ", user=" + user +
-                ", books=" + books +
-                ", status=" + status +
+                ",\nuser=" + user +
+                ",\nbooks=" + books +
                 '}';
     }
 }

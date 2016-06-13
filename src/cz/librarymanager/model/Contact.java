@@ -9,6 +9,13 @@ public class Contact {
     private int phoneNumber;
     private String email;
 
+    public Contact(Address address, Address contactAddress, int phoneNumber, String email) {
+        this.address = address;
+        this.contactAddress = contactAddress;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
+
     public Address getAddress() {
         return address;
     }
@@ -43,7 +50,7 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact{" +
+        return "\nContact{" +
                 "address=" + address +
                 ", contactAddress=" + contactAddress +
                 ", phoneNumber=" + phoneNumber +

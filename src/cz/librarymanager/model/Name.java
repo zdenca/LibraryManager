@@ -43,7 +43,7 @@ public class Name {
         return "Name{" +
                 "firstName='" + firstName + '\'' +
                 ", middleName='" + middleName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", lastName='" + lastName + '\'' + '\n' +
                 '}';
     }
 }

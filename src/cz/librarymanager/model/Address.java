@@ -9,6 +9,13 @@ public class Address {
     private int number;
     private int zipCode;
 
+    public Address(String city, String street, int number, int zipCode) {
+        this.city = city;
+        this.street = street;
+        this.number = number;
+        this.zipCode = zipCode;
+    }
+
     public void setCity(String city) {
         this.city = city;
     }
@@ -49,7 +56,7 @@ public class Address {
                 "city='" + city + '\'' +
                 ", street='" + street + '\'' +
                 ", number=" + number +
-                ", zipCode=" + zipCode +
+                ", zipCode=" + zipCode + '\n' +
                 '}';
     }
 }

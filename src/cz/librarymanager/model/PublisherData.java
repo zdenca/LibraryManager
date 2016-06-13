@@ -44,6 +44,7 @@ public class PublisherData {
         this.editionNumber = editionNumber;
     }
 
+
     public Date getIssueDate() {
         return issueDate;
     }

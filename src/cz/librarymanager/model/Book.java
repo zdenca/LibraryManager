@@ -1,7 +1,9 @@
 package cz.librarymanager.model;
 
+import cz.librarymanager.model.enums.BookForm;
 import cz.librarymanager.model.enums.BookStatus;
 import cz.librarymanager.model.enums.LendingType;
+import cz.librarymanager.model.enums.ReservationStatus;
 
 import java.util.List;
 
@@ -18,7 +20,26 @@ public class Book {
     private LendingType lendingType;
     private int price;
     private String currency;
+    private BookForm form;
+    private ReservationStatus reservationStatus;
 
+
+
+   public ReservationStatus getReservationStatus() {
+       return reservationStatus;
+   }
+
+    public void setReservationStatus(ReservationStatus reservationStatus) {
+        this.reservationStatus = reservationStatus;
+    }
+
+    public BookForm getForm() {
+        return form;
+    }
+
+    public void setForm(BookForm form) {
+        this.form = form;
+    }
 
     public LendingType isLendingType() {
         return lendingType;
@@ -95,14 +116,17 @@ public class Book {
     @Override
     public String toString() {
         return "Book{" +
-                "registrationNumber ='" + registrationNumber + '\'' +
+                "registrationNumber='" + registrationNumber + '\'' +
                 ", isbn='" + isbn + '\'' +
-                ", title=" + title +
+                ",\ntitle=" + title +
                 ", authors=" + authors +
-                ", status=" + status +
-                ", \npublisherData=" + publisherData +
+                ",\npublisherData=" + publisherData +
+                ",\nstatus=" + status +
                 ", lendingType=" + lendingType +
+                ", reservationStatus= " + reservationStatus +
+                ", form=" + form +
                 ", price=" + price +
+                ", currency='" + currency + '\'' +
                 '}';
     }
 
